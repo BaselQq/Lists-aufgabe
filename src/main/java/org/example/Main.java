@@ -64,7 +64,6 @@ public class Main {
         beutel.add(students.get(0));
         beutel.add(students.get(1));
         beutel.add(students.get(2));
-        beutel.add(students.get(3));
 
         System.out.println(beutel);
 
