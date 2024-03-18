@@ -8,6 +8,8 @@ public class Student {
     private String lastName;
     private int studentId;
 
+    private List<Course> courses;
+
     public Student(String firstName, String lastName, int studentId) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -40,12 +42,21 @@ public class Student {
         this.studentId = studentId;
     }
 
+    public List<Course> getCourses() {
+        return courses;
+    }
+
+    public void setCourses(List<Course> courses) {
+        this.courses = courses;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", studentId=" + studentId +
+                ", courses=" + courses +
                 '}';
     }
 
@@ -56,5 +67,9 @@ public class Student {
             }
         }
         return null;
+    }
+
+    public void addCourses(List<Course> courses) {
+        setCourses(courses);
     }
 }

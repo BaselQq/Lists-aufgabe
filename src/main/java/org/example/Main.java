@@ -24,5 +24,14 @@ public class Main {
         Student foundedStudent = new Student();
         System.out.println(foundedStudent.findStudentById(students, 3));
         System.out.println(school1.removeStudent(2));
+
+        Course JavaCourse = new Course("Java Kurs", "Lukas", "Java Room");
+        Course CSharpCourse = new Course("C# Kurs", "Phili", "C# Room");
+
+        List<Course> courses = new ArrayList<>();
+        courses.add(JavaCourse);
+        courses.add(CSharpCourse);
+
+        Alice.addCourses(courses);
     }
 }
