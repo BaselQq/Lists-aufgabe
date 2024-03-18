@@ -38,5 +38,40 @@ public class Main {
         for (Course AliceCourse : AliceCourses) {
             System.out.printf(AliceCourse.toString());
         }
+
+        // use Sack
+        System.out.println("Sack: ");
+
+        Sack sack = new Sack();
+
+        sack.add(students.get(0));
+        sack.add(students.get(1));
+        sack.add(students.get(2));
+
+        System.out.println(sack);
+
+        sack.removeLast();
+        System.out.println(sack);
+
+        System.out.println(sack.removeByIndex(1));
+        System.out.println(sack);
+
+        // use Beutel
+        System.out.println("Beutel: ");
+
+        Beutel beutel = new Beutel();
+
+        beutel.add(students.get(0));
+        beutel.add(students.get(1));
+        beutel.add(students.get(2));
+        beutel.add(students.get(3));
+
+        System.out.println(beutel);
+
+        beutel.removeLast();
+        System.out.println(beutel);
+
+        System.out.println(beutel.removeByIndex(1));
+        System.out.println(beutel);
     }
 }
