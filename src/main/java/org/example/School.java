@@ -25,4 +25,16 @@ public class School {
                 "students=" + students +
                 '}';
     }
+
+    public List<Course> getCoursesByStudentId(int studentId) {
+        Student students = new Student();
+
+        Student student = students.findStudentById(this.students, studentId);
+
+        if (student != null) {
+            List<Course> studentCourses = student.getCourses();
+            return studentCourses;
+        }
+        return null;
+    }
 }

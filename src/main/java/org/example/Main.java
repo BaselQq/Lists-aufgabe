@@ -33,5 +33,10 @@ public class Main {
         courses.add(CSharpCourse);
 
         Alice.addCourses(courses);
+
+        List<Course> AliceCourses =  school1.getCoursesByStudentId(1);
+        for (Course AliceCourse : AliceCourses) {
+            System.out.printf(AliceCourse.toString());
+        }
     }
 }
